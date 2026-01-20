@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Good Boy (for WebWork)",
+  "version": "1.0.0",
+  "description": "you are a good boy (for webwork)",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.webworkbase.myschool.edu/*",
+        "http://*.webworkbase.myschool.edu/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
